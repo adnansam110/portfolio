@@ -1,4 +1,5 @@
 # Software Developer Portfolio :100:
+
 A responsive and open source portfolio for software developers (Next.js & Tailwind CSS version).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -8,15 +9,19 @@ A responsive and open source portfolio for software developers (Next.js & Tailwi
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Website Screenshot
+
 <img src="./Software-Developer-Portfolio-Screenshot.png" alt="Software-Developer-Portfolio-Screenshot" />
 
 ## Install Dependencies:
+
 First install the needed dependencies:
+
 ```bash
 npm install
 ```
 
 ## Getting Started
+
 Run the development server:
 
 ```bash
@@ -46,4 +51,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-&copy; 2022 - Made With ❤️ By <a href="https://ismailium.vercel.app/"><b>Ismailium</b></a>, using <a href="https://nextjs.org/"><b>Next.js</b></a> and <a href="https://tailwindcss.com/"><b>Tailwind CSS</b></a>, Deployed on <a href="https://vercel.com/"><b>Vercel</b></a>.
+&copy; 2023 - Made With ❤️ By <a href="https://www.linkedin.com/in/adnan-sameer-785103201/"><b>Adnan Sameer</b></a>

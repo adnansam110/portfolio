@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from "../../styles/Navbar.module.css";
-
+import ProfileImage from '../../assets/images/profile-image.png'
+import Image from 'next/image'
 const Navbar = () => {
     const [menuOpen, SetMenuOpen] = useState(false);
 
@@ -17,10 +18,8 @@ const Navbar = () => {
 
     return (
         <header className={`py-3 px-2 flex justify-between items-center flex-wrap lg:py-7 ${styles.header} ${menuOpen ? `${styles.open}` : ""}`}>
-            <div className="z-50">
-                <h2 className="text-2xl text-white font-bold">
-                    <a href="" title="John Doe">John Doe</a>
-                </h2>
+            <div className="z-50 rounded-full">
+                <Image src={ProfileImage} width={100} height={100} className={"rounded-full"} />
             </div>
             <nav>
                 <ul 

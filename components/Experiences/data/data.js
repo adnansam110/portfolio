@@ -1,46 +1,12 @@
 const data = [
-    {
-        id: 1,
-        year: 2021,
-        job_title: "Back-End Enginner",
-        company: "Nike",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        id: 2,
-        year: 2020,
-        job_title: "Software Enginner",
-        company: "Google Clouds",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        id: 3,
-        year: 2019,
-        job_title: "Full-Stack Developer",
-        company: "AWS",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        id: 4,
-        year: 2018,
-        job_title: "Front-End Developer",
-        company: "Netflix",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        id: 5,
-        year: 2017,
-        job_title: "Software Developer",
-        company: "Vercel",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        id: 6,
-        year: 2016,
-        job_title: "Front-End Enginner",
-        company: "Facebook",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+  {
+    id: 1,
+    year: "2021 - Present",
+    job_title: "Software Engineer",
+    company: "IOMechs",
+    description:
+      "I have experience working on a wide range of projects, utilizing technologies such as React, React Native, Flutter and Next.js. I am responsible for delivering high-quality solutions and have a proven track record of success in leading and managing teams. My skills in problem-solving and creative thinking allow me to approach projects with a fresh perspective and come up with innovative solutions. I am always eager to stay up-to-date with the latest industry trends and technologies, and I am excited to continue my growth as a software engineer. With my excellent communication and teamwork skills, I am confident that I can make a valuable contribution to any project or team.",
+  },
 ];
 
 export default data;
