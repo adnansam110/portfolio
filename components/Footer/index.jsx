@@ -72,7 +72,7 @@ const Footer = () => {
           </li>
         </ul>
         <h5 className="text-white font-initial text-sm">
-          &copy; 2022 - Adnan Sameer. All Rights Reserved.
+          &copy; 2023 - Adnan Sameer. All Rights Reserved.
         </h5>
       </div>
       <div className="py-8 pt-0 px-2">
@@ -86,6 +86,9 @@ const Footer = () => {
           >
             Adnan Sameer
           </a>{" "}
+          <br />
+          The Career Connect and Basket logos are trademarks of their respective
+          owners.
         </h5>
       </div>
     </div>
