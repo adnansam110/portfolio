@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="p-2">
+    <div className="p-2 font-roboto-mono">
       <Head>
         <title>Adnan Sameer - Software Engineer</title>
         <meta
@@ -24,7 +24,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Experiences />
-        {/* <Works /> */}
+        <Works />
         <Contact />
         <Footer />
       </div>

@@ -51,9 +51,12 @@ const Contact = () => {
           <h2 className="text-2xl text-teal-500 font-bold mb-2 sm:text-3xl">
             Start project?
           </h2>
-          <h3 className="text-md text-gray-400 sm:text-xl">
+          <a
+            href="mailto:adnansameer62@gmail.com"
+            className="text-md text-gray-400 sm:text-xl transition duration-150 hover:text-gray-200"
+          >
             adnansameer62@gmail.com
-          </h3>
+          </a>
         </div>
       </div>
     </div>

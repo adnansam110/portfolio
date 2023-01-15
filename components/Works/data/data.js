@@ -2,11 +2,21 @@ const data = [
   {
     id: 1,
     image_url:
-      "https://cdn.dribbble.com/users/2919663/screenshots/18372585/media/22afc4757735732a96d5a9563202f729.png",
-    work_title: "Blockchain Platform",
+      "https://play-lh.googleusercontent.com/3uXnP_ec9cnC--lCRbKML1P0CcR7y_J8NDTLcO7oyhR_6EVMdEz_laTekxyP1kbkCRX1=w240-h480-rw",
+    work_title: "Career Connect",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    genre: "Digital Assets",
+      "Career Counselling & Education for everyone from all the age groups",
+    genre: "Education",
+    url: "https://play.google.com/store/apps/details?id=club.careerconnect.app&hl=en&gl=US",
+  },
+  {
+    id: 2,
+    image_url: "https://www.trybasket.com/LogoHorizontal.svg",
+    work_title: "Basket",
+    description:
+      "Make shopping effortless with a single basket for all the things you love.",
+    genre: "E-commerce",
+    url: "https://www.trybasket.com/",
   },
 ];
 
