@@ -20,10 +20,10 @@ const Hero = () => {
         Adnan Sameer
       </h1>
       <p className="text-md text-gray-400 leading-7 my-4 sm:text-lg sm:leading-8">
-        Cuber and Self-Taught Front-end Software Developer, I enjoy building
+        Cuber and Self-Taught Software Developer, I enjoy building
         responsive web apps & designs using HTML5, CSS3, JavaScript, Next.js,
         React.js, Flutter, Firebase, Restful APIs.., I have been working on the
-        web and mobile for around 2 years building freelance/learning projects.
+        web and mobile for over 2 years building freelance/learning projects.
       </p>
       <div className="my-7 flex justify-start items-center gap-4 flex-wrap">
         <button
