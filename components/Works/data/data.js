@@ -18,6 +18,15 @@ const data = [
     genre: "E-commerce",
     url: "https://www.trybasket.com/",
   },
+  {
+    id: 3,
+    image_url: "https://play-lh.googleusercontent.com/IEfkOCWI9Z6nVOKgcfzBuqzaalph59lQqhksLnrZcvpQCukFaaTvHqOQ2RJQmJqb51w=w240-h480-rw",
+    work_title: "Heba",
+    description:
+      "Heba is the go-to platform for modern, hassle-free gifting in the Arab world.",
+    genre: "E-commerce",
+    url: "https://play.google.com/store/apps/details?id=com.heba.app",
+  },
 ];
 
 export default data;

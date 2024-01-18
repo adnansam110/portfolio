@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../../styles/Navbar.module.css";
-import ProfileImage from "../../assets/images/profile-image.jpeg";
+import ProfileImage from "../../assets/images/profile-image.png";
 import Image from "next/image";
 const Navbar = () => {
   const [menuOpen, SetMenuOpen] = useState(false);
