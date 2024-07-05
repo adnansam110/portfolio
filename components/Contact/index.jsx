@@ -13,7 +13,7 @@ const Contact = () => {
         <ul>
           <li className="mb-4 text-gray-300 text-md w-max" title="LinkedIn">
             <a
-              href="https://www.linkedin.com/in/adnan-sameer-785103201/"
+              href="https://www.linkedin.com/in/adnan-sameer/"
               target={"_blank"}
               className="flex gap-2 justify-start items-center w-max ease-in-out duration-150 hover:text-teal-500"
               rel="noreferrer"

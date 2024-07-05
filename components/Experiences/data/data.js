@@ -17,11 +17,19 @@ const data = [
   },
   {
     id: 3,
-    year: "December 2023 - Present",
+    year: "December 2023 - March 2024",
     job_title: "Software Engineer",
     company: "Retrocausal",
     description:
       "As a software engineer at Retrocausal I Led the architectural design of components, seamlessly integrating APIs and markup, and proactively resolved bugs. Executed agile development, collaborating across diverse teams, and assumed responsibility for creating intricate modules and features. Produced clean, scalable, and reusable code, aligning with best practices and company standards. Spearheaded the development and implementation of innovative product features. Conducted thorough code reviews during the PR process, ensuring code quality and adherence to standards.",
+  },
+  {
+    id: 4,
+    year: "March 2024 - Present",
+    job_title: "Software Engineer",
+    company: "Snoonu",
+    description:
+      "At Snoonu, I worked as a software engineer in the frontend team, focusing on their merchant service portal. My primary responsibility was developing a real-time merchant portal app used by merchants to sell products on the Snoonu platform. I ensured the application was production-ready and pixel-perfect on both web and mobile platforms. My work involved using React.js with TypeScript to create a seamless user experience. Additionally, I conducted thorough code reviews and collaborated closely with the UI/UX team to align the design and functionality, as well as with the backend team to ensure efficient data handling and integration.",
   },
 ];
 

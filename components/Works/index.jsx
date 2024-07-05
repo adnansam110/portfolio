@@ -18,7 +18,7 @@ const Works = () => {
               <div
                 key={index}
                 title={`${work.work_title} - ${work.genre}`}
-                className="bg-cyan-900 h-[500px] rounded-lg p-4 max-w-4xl m-auto mb-4 w-full  flex flex-col justify-between ease-in-out duration-150 hover:bg-cyan-800 sm:mb-0"
+                className="bg-cyan-900 rounded-lg p-4 max-w-4xl m-auto mb-4 w-full  flex flex-col justify-between ease-in-out duration-150 hover:bg-cyan-800 sm:mb-0 h-max"
               >
                 <div className="w-45 flex flex-col h-full justify-center items-center">
                   <div />

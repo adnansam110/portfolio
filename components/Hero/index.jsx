@@ -75,7 +75,7 @@ const Hero = () => {
           </li>
           <li title="LinkedIn">
             <a
-              href="https://www.linkedin.com/in/adnan-sameer-785103201/"
+              href="https://www.linkedin.com/in/adnan-sameer/"
               target={"_blank"}
               className="text-teal-500 text-md ease-in-out duration-150 hover:text-white"
               rel="noreferrer"

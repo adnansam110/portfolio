@@ -13,7 +13,7 @@ const Footer = () => {
         <ul className="flex justify-center items-center gap-3">
           <li className="text-white text-sm" title="LinkedIn">
             <a
-              href="https://www.linkedin.com/in/adnan-sameer-785103201/"
+              href="https://www.linkedin.com/in/adnan-sameer/"
               target={"_blank"}
               className="ease-in-out duration-150 hover:text-teal-500"
               rel="noreferrer"
@@ -77,9 +77,9 @@ const Footer = () => {
       </div>
       <div className="py-8 pt-0 px-2">
         <h5 className="text-white text-sm text-center leading-6">
-          &copy; 2023 - Made with ❤️ by{" "}
+          &copy; {new Date().getFullYear()} - Made with ❤️ by{" "}
           <a
-            href="https://www.linkedin.com/in/adnan-sameer-785103201/"
+            href="https://www.linkedin.com/in/adnan-sameer/"
             target="_blank"
             rel="noreferrer"
             className="font-semibold text-sky-500"
@@ -87,7 +87,7 @@ const Footer = () => {
             Adnan Sameer
           </a>{" "}
           <br />
-          The Career Connect and Basket logos are trademarks of their respective
+          The Career Connect, Basket, Heba and Svips logos are trademarks of their respective
           owners.
         </h5>
       </div>
