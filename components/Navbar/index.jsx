@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../../styles/Navbar.module.css";
-import ProfileImage from "../../assets/images/profile-image.png";
+import ProfileImage from "../../assets/images/portfolio-image.jpg";
 import Image from "next/image";
 const Navbar = () => {
   const [menuOpen, SetMenuOpen] = useState(false);
@@ -21,12 +21,12 @@ const Navbar = () => {
         styles.header
       } ${menuOpen ? `${styles.open}` : ""}`}
     >
-      <div className={`z-50 rounded-full ${menuOpen ? "hidden" : "block"}`}>
+      <div className={`z-50 rounded-full  ${menuOpen ? "hidden" : "block"}`}>
         <Image
           src={ProfileImage}
           width={100}
           height={100}
-          className={"rounded-full"}
+          className={"rounded-full "}
           alt={"User Image"}
         />
       </div>
@@ -64,6 +64,15 @@ const Navbar = () => {
               onClick={() => closeMenu()}
             >
               Contact
+            </a>
+          </li>
+          <li className="mb-4 mx-0 sm:mb-0 sm:mx-3" title="Contact">
+            <a
+              href="https://topmate.io/adnan_sameer/"
+              className="text-1xs text-white font-semibold ease-in-out duration-150 border-white border-[1px] rounded-xl px-4 py-2 hover:bg-teal-400"
+              onClick={() => closeMenu()}
+            >
+              Book a session
             </a>
           </li>
         </ul>

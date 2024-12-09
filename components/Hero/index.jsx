@@ -4,9 +4,7 @@ import React from "react";
 import { SiHey } from "react-icons/si";
 import { RiProfileLine, RiContactsBookLine } from "react-icons/ri";
 import { FiLinkedin, FiGithub, FiTwitter } from "react-icons/fi";
-import Link from "next/link";
 import { resumeUrl } from "../../constants";
-// import resume from "assets/files/resume.pdf";
 
 const Hero = () => {
   return (
