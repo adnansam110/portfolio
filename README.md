@@ -10,8 +10,7 @@ A responsive and open source portfolio for software developers (Next.js & Tailwi
 
 ## Website Screenshot
 
-<img src="./Portfolio-Screenshot.png" alt="Portfolio-Screenshot" />
-
+![Uploading Screenshot 2026-08-12 at 4.59.40 PM.png…]()
 ## Install Dependencies:
 
 First install the needed dependencies:
