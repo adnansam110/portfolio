@@ -1,4 +1,4 @@
-# Software Developer Portfolio :100:
+<img width="1498" height="787" alt="Screenshot 2026-08-12 at 5 00 12 PM" src="https://github.com/user-attachments/assets/2ebe9751-c809-4c12-8ddd-03ff7dd44f7f" /># Software Developer Portfolio :100:
 
 A responsive and open source portfolio for software developers (Next.js & Tailwind CSS version).
 
@@ -10,7 +10,8 @@ A responsive and open source portfolio for software developers (Next.js & Tailwi
 
 ## Website Screenshot
 
-![Uploading Screenshot 2026-08-12 at 4.59.40 PM.png…]()
+<img width="1498" height="787" alt="Screenshot 2026-08-12 at 5 00 33 PM" src="https://github.com/user-attachments/assets/a9ff3d55-fe38-4716-9b95-a1b1de1a7c6d" />
+
 ## Install Dependencies:
 
 First install the needed dependencies:
