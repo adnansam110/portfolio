@@ -16,6 +16,8 @@ First install the needed dependencies:
 
 ```bash
 npm install
+# or
+yarn install
 ```
 
 ## Getting Started
