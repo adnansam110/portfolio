@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="p-2 font-roboto-mono">
+    <div className="font-inter">
       <Head>
         <title>Adnan Sameer - Software Engineer</title>
         <meta
@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
 
-      <div className="max-w-7xl m-auto">
+      <div className="max-w-7xl m-auto font-inter">
         <Navbar />
         <Hero />
         <Experiences />

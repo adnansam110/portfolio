@@ -1,94 +1,113 @@
-import { useState } from "react";
-import styles from "../../styles/Navbar.module.css";
-import ProfileImage from "../../assets/images/portfolio-image.jpg";
+import { useState, useEffect } from "react";
+import ProfileImage from "../../assets/images/portfolio-image.png";
 import Image from "next/image";
-const Navbar = () => {
-  const [menuOpen, SetMenuOpen] = useState(false);
 
-  const closeMenu = () => {
-    if (!menuOpen) {
-      SetMenuOpen(menuOpen);
-      menuOpen = true;
-    } else {
-      SetMenuOpen(!menuOpen);
-      menuOpen = false;
-    }
-  };
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <header
-      className={`py-3 px-2 flex justify-between items-center flex-wrap lg:py-7 ${
-        styles.header
-      } ${menuOpen ? `${styles.open}` : ""}`}
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-black/70 backdrop-blur-xl border-b border-white/10 shadow-lg shadow-black/20"
+          : "bg-transparent"
+      }`}
     >
-      <div className={`z-50 rounded-full  ${menuOpen ? "hidden" : "block"}`}>
-        <Image
-          src={ProfileImage}
-          width={100}
-          height={100}
-          className={"rounded-full "}
-          alt={"User Image"}
-        />
-      </div>
-      <nav>
-        <ul
-          className={`menu hidden absolute left-0 top-0 m-0 py-20 pt-16 px-4 bg-black z-40 w-full h-52 sm:w-unset sm:h-auto sm:bg-transparent sm:flex sm:py-0 sm:static sm:left-unset sm:top-unset ${
-            styles.menu
-          } ${menuOpen ? `${styles.open}` : ""}`}
-        >
-          <li
-            className="mb-4 mt-2 mx-0 sm:mb-0 sm:mt-0 sm:mx-3"
-            title="Experiences"
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <a href="#" className="flex items-center gap-3 group">
+          <div className="rounded-full overflow-hidden ring-2 ring-cyan-500/40 group-hover:ring-cyan-400/80 transition-all duration-300 w-10 h-10">
+            <Image
+              src={ProfileImage}
+              width={40}
+              height={40}
+              className="rounded-full object-cover"
+              alt="Adnan Sameer"
+            />
+          </div>
+          <span className="text-white font-semibold text-sm hidden sm:block tracking-wide">
+            Adnan Sameer
+          </span>
+        </a>
+
+        {/* Desktop Nav */}
+        <nav className="hidden sm:flex items-center gap-8">
+          {["Experiences", "Projects", "Contact"].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="text-gray-400 text-sm font-medium hover:text-white transition-colors duration-200"
+            >
+              {item}
+            </a>
+          ))}
+          <a
+            href="https://topmate.io/adnan_sameer/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm font-semibold text-cyan-400 border border-cyan-400/50 px-4 py-2 rounded-full hover:bg-cyan-400 hover:text-black transition-all duration-200"
           >
-            <a
-              href="#experiences"
-              className="text-1xs text-white font-semibold ease-in-out duration-150 hover:text-teal-400"
-              onClick={() => closeMenu()}
-            >
-              Experiences
-            </a>
-          </li>
-          <li className="mb-4 mx-0 sm:mb-0 sm:mx-3" title="Projects">
-            <a
-              href="#projects"
-              className="text-1xs text-white font-semibold ease-in-out duration-150 hover:text-teal-400"
-              onClick={() => closeMenu()}
-            >
-              Projects
-            </a>
-          </li>
-          <li className="mb-4 mx-0 sm:mb-0 sm:mx-3" title="Contact">
-            <a
-              href="#contact"
-              className="text-1xs text-white font-semibold ease-in-out duration-150 hover:text-teal-400"
-              onClick={() => closeMenu()}
-            >
-              Contact
-            </a>
-          </li>
-          <li className="mb-4 mx-0 sm:mb-0 sm:mx-3" title="Contact">
-            <a
-              href="https://topmate.io/adnan_sameer/"
-              className="text-1xs text-white font-semibold ease-in-out duration-150 border-white border-[1px] rounded-xl px-4 py-2 hover:bg-teal-400"
-              onClick={() => closeMenu()}
-            >
-              Book a session
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div
-        className={`z-50 ${
-          menuOpen && "mb-24"
-        } flex flex-col justify-center items-center sm:hidden ${
-          styles.hamburger
-        } ${menuOpen ? `${styles.open}` : ""}`}
-        onClick={() => SetMenuOpen(!menuOpen)}
-      >
-        <span className="h-0.5 w-7 mb-1.5 bg-white"></span>
-        <span className="h-0.5 w-7 mb-1.5 bg-white"></span>
-        <span className="h-0.5 w-7 mb-1.5 bg-white"></span>
+            Book a session
+          </a>
+        </nav>
+
+        {/* Mobile Hamburger */}
+        <button
+          className="sm:hidden flex flex-col gap-1.5 p-2"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span
+            className={`h-0.5 w-6 bg-white transition-all duration-300 ${
+              menuOpen ? "rotate-45 translate-y-2" : ""
+            }`}
+          />
+          <span
+            className={`h-0.5 w-6 bg-white transition-all duration-300 ${
+              menuOpen ? "opacity-0" : ""
+            }`}
+          />
+          <span
+            className={`h-0.5 w-6 bg-white transition-all duration-300 ${
+              menuOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          />
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="sm:hidden bg-black/90 backdrop-blur-xl border-t border-white/10 px-6 py-6 flex flex-col gap-5">
+          {["Experiences", "Projects", "Contact"].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="text-gray-300 text-base font-medium hover:text-white transition-colors"
+              onClick={closeMenu}
+            >
+              {item}
+            </a>
+          ))}
+          <a
+            href="https://topmate.io/adnan_sameer/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm font-semibold text-cyan-400 border border-cyan-400/50 px-4 py-2 rounded-full w-fit hover:bg-cyan-400 hover:text-black transition-all duration-200"
+            onClick={closeMenu}
+          >
+            Book a session
+          </a>
+        </div>
+      )}
     </header>
   );
 };

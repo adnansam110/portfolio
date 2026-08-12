@@ -1,40 +1,56 @@
 import React from "react";
-
-// Experiences Data
 import experiences from "./data/data.js";
 
 const Experiences = () => {
+  const years = new Date().getFullYear() - new Date(2021, 2, 15).getFullYear();
+
   return (
-    <div className="max-w-6xl m-auto p-4 pt-8 sm:pt-20 px-2" id="experiences">
-      <h1 className="text-3xl text-teal-500 font-bold sm:text-4xl sm:leading-10">
-        <span className="text-5xl sm:text-6xl">{new Date().getFullYear() - new Date(2021, 2, 15).getFullYear()}+</span>
-        <br /> Years Of Professional Experience.
-      </h1>
-      <div className="py-6 pt-10 grid lg:grid-cols-3 sm:grid-cols-2 gap-6">
-        {experiences
-          ? experiences.map((experience, index) => (
-              <div
-                key={index}
-                className="bg-cyan-900 p-4 rounded hover:bg-cyan-800 relative"
-                title={`${experience.job_title} @${experience.company}`}
-              >
-                <b className="text-teal-500 text-sm bg-white py-1 px-2 rounded absolute left-3 -top-2 hover:bg-teal-500 hover:text-white">
-                  {experience.company}
-                </b>
-                <h2 className="mt-4 mb-2 text-xl font-bold text-teal-500">
-                  {experience.year}
-                </h2>
-                <h3 className="font-bold text-2xl text-white">
-                  {experience.job_title}
+    <section className="max-w-6xl mx-auto px-6 py-20" id="experiences">
+      {/* Section Header */}
+      <div className="mb-14">
+        <p className="text-cyan-400 text-sm font-semibold uppercase tracking-widest mb-3">
+          Career
+        </p>
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight">
+          {years}+ Years of{" "}
+          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            Professional Experience
+          </span>
+        </h2>
+      </div>
+
+      {/* Timeline */}
+      <div className="relative">
+        {/* Vertical line */}
+        <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-500/50 via-cyan-500/20 to-transparent hidden sm:block ml-[7px]" />
+
+        <div className="flex flex-col gap-10">
+          {experiences.map((exp, index) => (
+            <div key={index} className="sm:pl-10 relative group">
+              {/* Timeline dot */}
+              <div className="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full border-2 border-cyan-400 bg-gray-950 hidden sm:block group-hover:bg-cyan-400 transition-colors duration-300" />
+
+              <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 hover:border-cyan-500/30 hover:bg-white/[0.05] transition-all duration-300">
+                <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
+                  <span className="text-xs font-semibold text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 px-3 py-1 rounded-full">
+                    {exp.company}
+                  </span>
+                  <span className="text-xs text-gray-500 font-mono">
+                    {exp.year}
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  {exp.job_title}
                 </h3>
-                <p className="mt-2 leading-6 text-sm text-gray-200">
-                  {experience.description}
+                <p className="text-gray-400 text-sm leading-7">
+                  {exp.description}
                 </p>
               </div>
-            ))
-          : null}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
