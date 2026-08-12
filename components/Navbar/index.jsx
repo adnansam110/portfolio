@@ -32,7 +32,10 @@ const Navbar = () => {
               height={40}
               className="rounded-full object-cover"
               alt="Adnan Sameer"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <span className="text-white font-semibold text-sm hidden sm:block tracking-wide">
             Adnan Sameer
