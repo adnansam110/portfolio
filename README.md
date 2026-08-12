@@ -1,5 +1,3 @@
-<img width="1498" height="787" alt="Screenshot 2026-08-12 at 5 00 12 PM" src="https://github.com/user-attachments/assets/2ebe9751-c809-4c12-8ddd-03ff7dd44f7f" /># Software Developer Portfolio :100:
-
 A responsive and open source portfolio for software developers (Next.js & Tailwind CSS version).
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
